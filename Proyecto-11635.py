@@ -62,9 +62,9 @@ def longestDistances(myGraph,hotels):
 
     while cola:
         node = cola.pop(0)
-        d,p=dijkstra(myGraph,node)
 
         if node not in visitados:
+            d,p=dijkstra(myGraph,node)
             visitados.append(node)
 
             for i in hotels:
